@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <title>Dota 2 Stats</title>
-   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
-        <!--jQuery, linked from a CDN-->
-   <script src="scripts.js"></script>
-   <link rel="stylesheet" href="style.css" />
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div class="container">
-   <header>
-      <h1>Hero Stats</h1>
-   </header>
-   <section id="fetch">
-      <input type="text" placeholder="Enter a heroes name" id="term" />
-      <button id="search">Find me my Hero!</button>
-   </section>
 
-   
-   <section id="image">
-   </section>
-   <section id="poster">
-   </section>
-   <footer>
-      <p>Credit to <a href="http://twostepmedia.co.uk">Ben Howdle</a> and <a href="http://herostats.io/">JankDota</a></p>
-   </footer>
-</div>
+<head>
+    <title>Dota 2 Stats</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+    <!--jQuery, linked from a CDN-->
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <!--nexus 7 menu -->
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li class="gn-search-item">
+                                <input placeholder="Search" type="search" class="gn-search">
+                                <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                            </li>
+                            <li>
+                                <a class="gn-icon gn-icon-download">Downloads</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a>
+                                    </li>
+                                    <li><a class="gn-icon gn-icon-photoshop">Photoshop files</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="gn-icon gn-icon-cog">Settings</a>
+                            </li>
+                            <li><a class="gn-icon gn-icon-help">Help</a>
+                            </li>
+                            <li>
+                                <a class="gn-icon gn-icon-archive">Archives</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article">Articles</a>
+                                    </li>
+                                    <li><a class="gn-icon gn-icon-pictures">Images</a>
+                                    </li>
+                                    <li><a class="gn-icon gn-icon-videos">Videos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li><a href="http://tympanus.net/codrops">Codrops</a>
+            </li>
+            <li><a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/HeaderEffects/"><span>Previous Demo</span></a>
+            </li>
+            <li><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16030"><span>Back to the Codrops Article</span></a>
+            </li>
+        </ul>
+        <header>
+            <h1>Hero Stats</h1>
+        </header>
+        <section id="fetch">
+            <input type="text" placeholder="Enter a heroes name" id="term" />
+            <button id="search">Find me my Hero!</button>
+        </section>
+
+
+        <section id="image">
+        </section>
+        <section id="poster">
+        </section>
+        <footer>
+            <p>Credit to <a href="http://twostepmedia.co.uk">Ben Howdle</a> and <a href="http://herostats.io/">JankDota</a>
+            </p>
+        </footer>
+    </div>
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script>
+        new gnMenu(document.getElementById('gn-menu'));
+    </script>
 </body>
+
 </html>
